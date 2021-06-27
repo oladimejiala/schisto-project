@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom css/smodel.css">
+    <title>Features Intake</title>
+</head>
+
+<body >
+    <div id="body-wrapper">
+        <div id="body">
+            <div id="inner-body">
+                <header>
+                    <div class="card-header">
+                        <!-- header image/ like logo fo the app -->
+                        <img id="small-logo-image" class="img-thumbnail" src="img/Schisto image.jpg" alt="ShistApp ">
+
+                        <!--******* search bar ********-->
+                        <input id="search-bar" class="form-control" type="search" placeholder="Search.....">
+                    </div>
+                </header>
+
+                <nav>
+                    <!-- ****************NAVIGATION SECTION*************** -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Schisto Predict</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu">
+                               <option value=""><a class="dropdown-item" href="#">Lymphatic filariasis</a></option>
+                               <option value=""><a class="dropdown-item" href="#">Onchocerciasis</a></option>
+                                <div class="dropdown-divider">
+                                <a class="dropdown-item" href="#">Loa Loa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">NTD Games</a>
+                        </li>
+                    </ul>
+                </nav>
+                <br>
+                <br>
+                <main>
+                    <div class="caption-top">
+                        <img id="large-image-logo" class="img-thumbnail" src="img/Schisto image.jpg"
+                            alt="Schistosoma large picture"> <br>
+                        <!-- this is a bigger image welcoming the users-->
+
+                        <!-- style this heading with  -->
+                        <span id="schisto-heading" class="container">
+                            <h1>Schisto Prediction App</h1>
+                        </span>
+                        <span id="form-instruction" class="align-content-lg-center">
+                            <p><b>Input your data in the form below or load a data file</b></p>
+                        </span>
+                        <br>
+                        <br>
+                        <!-- <div class="alert-success" role="alert">
+                            <button type="button" class="list-group-item-success" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+                    </div>
+                    <section id="form-data">
+                        <form action="">
+                            <div class="container">
+                                <div class="row"></div>
+                                <div class="col-sm-6">
+
+                                    <div class="form-group">
+                                        <label for="age-range"><b>Age group:</b>
+                                        <input list="age-range" type="text" name="age-range" class="form-control"> <small id="help" class="form-text text-muted"><i>
+                                            <a id="learn-more" href="https://www.who.int/Schistosomiasis">Learn More</a></i></small>
+                                        <datalist name="age-range" id="age-range">
+                                            <option value="0-5( PSAC)"></option>
+                                            <option value="5-16 (SAC)"></option>
+                                            <option value="16-25 (Adolescent)"></option>
+                                            <option value="25+ (Adults)"></option>
+                                            <!-- <option value="30-35"></option>
+                                            <option value="40-45"></option>
+                                            <option value="45-50"></option> -->
+                                        </datalist>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for=""><b>Sex:</b>
+                                        <select class="form-control" name="sex" id="sex">
+                                            <option>Select an Option</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        </label>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                    <label for="History-of-Schisto"><b>History of Schisto?:</b>   
+                                        Yes <input type="radio" name="Yes" id="Yes" aria-describedby="Yes">
+                                        No <input type="radio" name="No" id="No" aria-describedby="No">
+                                    </label>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                      <label for="FGS"><b>FGS Positive?</b>
+                                      <input list="FGS" class="form-control" name="FGS" aria-describedby="helpId" placeholder="">
+                                        <datalist id ="FGS">
+                                            <option value="Yes"></option>
+                                            <option value="No"></option>
+                                        </datalist>
+                                      <small id="help" class="form-text text-muted"><i>FGS: Female Genital Schistosomiasis</i></small>
+                                      </label>
+                                    </div>
+                                    <br>
+
+                                    <label for=""><b>Proteinuria(mol/ml)?:</b>
+                                    <br>
+                                    <input type="text" class="form-control col-xsm-6" name="" id=""
+                                        aria-describedby="helpId" placeholder="Enter the Protenuria Concentration here"> 
+                                        </label> 
+                                        <br>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="Model"><b>MLA:</b> <br>
+                                            <input list="Model" type="text" name ="age-range" class="form-control">
+                                            <datalist name="Model" id ="Model">
+                                                <option value="Sklearn"></option>
+                                                <option value="TensorFlow"></option>
+                                                <option value="Keras"></option>
+                                                <option value="Hadoop"></option>
+                                                <option value="Piggy"></option>
+                                            </datalist>
+                                            <small id="help" class="form-text text-muted"><i>MLA : Machine Learning Algrithm</i></small>
+                                            </label>
+                                        </div>
+                                        <br>
+                                <div class="form-group">
+                                    <label for="ML-Method"><b> Machine Learning Method:</b>
+                                        <input list="ML-Method" type="text" name="ML-Method" class="form-control">
+                                        <datalist name="ML-Method" id="ML-Method">
+                                            <option value="Regression"></option>
+                                            <option value="Classification"></option>
+                                            <option value="Ensemble"></option>
+                                            <option value="Natural Language Processing"></option>
+                                            <option value="Reinforcement Learning"></option>
+                                        </datalist>
+                                    </label>
+                                </div>
+                        </form>
+                                    <br>
+                                    <p>or</p>
+                                    <!-- Loading data into the model for prediction -->
+                                    <div id="load-data" class="form-group">
+                                        <label for=""><b>Load Data:</b>
+                                        <input type="file" class="form-control" name="" id="load-data" placeholder=""
+                                            aria-describedby="fileHelpId">
+                                            </label>
+                        
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+    <script>
+        $(".alert").alert();
+    </script>
+    <footer>
+        <div class="card-footer">
+            <a href="https://amtech-bj.netlify.app">
+                <p>&copy;AMTECH 2021</p>
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

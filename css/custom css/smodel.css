@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, p {
+    font-weight: bolder;
+    text-align: center;
+}
+
+#small-logo-image {
+    border-radius: 50%;
+    position:-ms-page;
+    height: 50px;
+    width: 50px;
+}
+
+#search-bar {
+    /* width: fit-content; */
+    /* position:relative;
+    /* display: inline-flexbox; */
+    /* margin-left: 0px; */
+}
+
+#menu-bar{
+    color: black;
+}
+
+#menu-bar-item{
+    color: black;
+    background-color: black;
+}
+
+#large-image-logo {
+    border-radius: 50%;
+    /* position:absolute; */
+    align-items: center;
+    height: 300px;
+    animation:infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 300px;
+    margin-left: 115px;
+    position:relative;
+}
+
+#schisto-heading, #form-instruction {
+    text-align: center;
+}
+
+#learn-more {
+    text-decoration: none;
+}
+#form-data {
+    margin: 10px;
+}
+
+#body-wrapper {
+    width: 600px;
+    max-width: 85%;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+}
+
+body {
+    background-color:rgb(24, 50, 72);
+}
+
+#inner-body {
+    background-color:antiquewhite;
+}
+
+#body-one {
+    background-color:black;
+    width: 600px;
+    max-width: 85%;
+    margin: auto;
+}
+#inner-body-one {
+    background-color:antiquewhite;
+}
+
+#login-options {
+    align-items: center;
+    /* padding-left: 100px; */
+}
